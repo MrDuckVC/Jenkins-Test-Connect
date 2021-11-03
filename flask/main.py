@@ -13,7 +13,6 @@ def login():
     if request.method == 'POST':
         login = flask.request.form["username"]
         password = flask.request.form["password"]
-        print(login, password)
         return "gg wp"
     elif request.method == 'GET':
         return flask.render_template("login_page.html")
