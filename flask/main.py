@@ -11,7 +11,6 @@ def index():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        print(flask.request.form)
         login = flask.request.form["username"]
         password = flask.request.form["password"]
         print(login, password)
